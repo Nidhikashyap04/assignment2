@@ -1,0 +1,161 @@
+.sidebar {
+  margin-top: 10px;
+  padding: 0;
+  width: 200px;
+  background-color: #e2dfdf;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: rgb(71, 70, 70);
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #ffffff;
+  color: rgb(161, 30, 173);
+  box-shadow:7px 5px 3px 2px rgba(119, 119, 124, 0.2);
+  border-left:rgb(161, 30, 173);
+  border-left-width: 10px;
+  border-left-style: solid;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: rgb(194, 191, 191);
+  color: rgb(255, 255, 255);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body{
+    background-color:rgb(241, 240, 240);
+}
+
+h5 h6{
+  display: inline;
+
+}
+h4{
+  padding-top: 20px;
+  margin-left: 210px;
+  color: rgb(161, 30, 173);
+}
+
+
+.box{
+  border: 1px solid white;
+  background-color: white;
+  margin: 20px 4px;
+  font-size: small;
+  height: 55px;
+  color: grey;
+  padding-left: 10px;
+}
+.container{
+  margin-left: 200px;
+}
+#green{
+  color: rgb(52, 194, 106);
+  font-size: small;
+
+}
+#order{
+  background: rgb(107, 5, 180);
+  color: white;
+  font-size: small;
+  padding: 4px;
+  margin-left: 5px;
+  border-radius: 40%;
+}
+.sidebar2{
+  background:2px solid white;
+  background-color: #e2dfdf;
+  border-radius: 5%;
+  height: 100%;
+ 
+}
+h6{
+  color: rgb(152, 26, 163);
+}
+.order1{
+  font-size: 15px;
+}
+.sector{
+  font-size: 13px;
+  align-items: center;
+}
+.block{
+  display: inline-block;
+  padding: 8px 8px;
+  margin: 5px 2px;
+  background-color: 1px solid white;
+  background-color: white;  
+  border-radius: 10%;
+  box-shadow:7px 5px 3px 2px rgba(119, 119, 124, 0.2);
+  text-align: center;
+}
+.section3{
+  margin-left: -10px;
+  margin-right: 200px;
+ 
+}
+.box3{
+  border: 1px solid white;
+  background-color:white;
+  margin: 20px 20px;
+  font-size: small;
+  color: grey;
+  padding-left: 10px;
+  border-radius: 5%;
+
+}
+.block2{
+  display:inline-block;
+  background-color: 1px solid white;
+  background-color: white;  
+  padding-right: 100px;
+}
+#text{
+  border: 2px dotted violet;
+}
+.about{
+  background-color:rgb(109, 16, 109) ;
+  color: white;
+  margin-left: -1px;
+  font-size: 15px;
+  border-radius: 5%;
+  margin-top: 12px;
+  padding: 10px 25px;
+  width: 1000px;
+  
+}
